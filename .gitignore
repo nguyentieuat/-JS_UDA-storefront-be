@@ -1,2 +1,4 @@
 node_modules
 dict
+# dotenv environment variables file
+.env

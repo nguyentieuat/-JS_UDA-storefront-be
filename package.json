@@ -9,6 +9,7 @@
     "dev-down": "db-migrate reset -m ./_Database/migrations  --config ./_Database/config/dev.json",
     "test-up": "db-migrate up -e test -m ./_Database/migrations   --config ./_Database/config/test.json ",
     "test-down": "db-migrate reset  -e test -m ./_Database/migrations  --config ./_Database/config/test.json",
+    "start": "nodemon -q ./src/server.ts",
     "dev": "npx ts-node ./src/server.ts ",
     "test": "npm run test-up && cross-env ENVI=test jasmine-ts && npm run test-down",
     "lint": "eslint . --ext .ts",
