@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Udacity Storefront</title>
+  </head>
+
+  <body>
+    <h1>Welcome to the Udacity Storefront</h1>
+    <p>The following routes are supported:</p>
+    <pre>
+    <b>#### Need to register user by `/registry`[POST] to get token for next use, or keep token for next use
+    </b>
+    #### Users
+    - Index `/users` [GET] [token required]
+    - Create `/users/` [POST] [token required]
+    - Read `/users/:id` [GET] [token required]
+    - Update `/users/:id` [PUT] [token required]
+    - Delete `/users/:id` [DELETE] [token required]
+    
+    #### Products
+    - Index `/products` [GET] [token required]
+    - Create `/products` [POST] [token required]
+    - Read `/products/:id` [GET] [token required]
+    - Read `/products/cat/:category` [GET] [token required] (get product by category)
+    - Delete `/products/:id` [DELETE] [token required]
+
+    #### Orders
+    - Index `/orders/:user_id` [GET] [token required] (get order by user)
+    - Index `/orders/current/:user_id` [GET] [token required] (get order neareast by user)
+    - Index `/orders/active/:user_id` [GET] [token required] (get order status active by user)
+    - Index `/orders/completed/:user_id` [GET] [token required] (get order status completed by user)
+    - Update `/orders` [PUT] [token required] (update status order)
+    - Delete `/orders/:id` [DELETE] [token required]
+  </pre
+    >
+  </body>
+</html>
